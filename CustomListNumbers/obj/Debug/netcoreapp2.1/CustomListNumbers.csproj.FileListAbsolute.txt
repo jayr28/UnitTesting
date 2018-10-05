@@ -1,0 +1,11 @@
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\bin\Debug\netcoreapp2.1\CustomListNumbers.deps.json
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\bin\Debug\netcoreapp2.1\CustomListNumbers.runtimeconfig.json
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\bin\Debug\netcoreapp2.1\CustomListNumbers.runtimeconfig.dev.json
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\bin\Debug\netcoreapp2.1\CustomListNumbers.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\bin\Debug\netcoreapp2.1\CustomListNumbers.pdb
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\obj\Debug\netcoreapp2.1\CustomListNumbers.csprojAssemblyReference.cache
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\obj\Debug\netcoreapp2.1\CustomListNumbers.csproj.CoreCompileInputs.cache
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\obj\Debug\netcoreapp2.1\CustomListNumbers.AssemblyInfoInputs.cache
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\obj\Debug\netcoreapp2.1\CustomListNumbers.AssemblyInfo.cs
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\obj\Debug\netcoreapp2.1\CustomListNumbers.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\CustomListNumbers\obj\Debug\netcoreapp2.1\CustomListNumbers.pdb

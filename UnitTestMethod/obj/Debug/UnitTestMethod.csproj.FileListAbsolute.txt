@@ -1,0 +1,17 @@
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\obj\Debug\UnitTestMethod.csprojAssemblyReference.cache
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\obj\Debug\UnitTestMethod.csproj.CoreCompileInputs.cache
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\UnitTestMethod.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\UnitTestMethod.pdb
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\CustomList.exe
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\CustomList.pdb
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\CustomList.exe.config
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\obj\Debug\UnitTestMethod.csproj.CopyComplete
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\obj\Debug\UnitTestMethod.dll
+C:\Users\jrod2\source\repos\CustomListNumbers\UnitTestMethod\obj\Debug\UnitTestMethod.pdb

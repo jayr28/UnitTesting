@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CustomListNumbers
 {
     class CustomListNumbers<T>
     {
-        T[] numbers = new T[Capacity];
+        T[] numbers = new T[8];
         int count = 0;
         public int Count
         {

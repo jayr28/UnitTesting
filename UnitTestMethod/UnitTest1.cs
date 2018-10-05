@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CustomListNumbers;
+using CustomList;
+
 
 namespace UnitTestMethod
 {
@@ -11,35 +12,57 @@ namespace UnitTestMethod
         public void TestMethod1()
         {
             //Arrange
-            CustomListNumbers<int> customNumbers = new CustomListNumbers<int>();
+            CustomNumbers<int> numberList = new CustomNumbers<int>();
             int value = 4;
             //Act
-            customNumbers.Add(value);
+            numberList.Add(value);
             //Assert
-            Assert.AreEqual(value, customNumbers[0]);
+            Assert.AreEqual(value, numberList[0]);
         }
+        [TestMethod]
         public void TestMethod2()
         {
             //Arrange
-            CustomListNumbers<int> customNumbers = new CustomListNumbers<int>();
+            CustomNumbers<int> numberList = new CustomNumbers<int>();
             int value = 4;
             int value1 = 8;
             //Act
-            customNumbers.Add(value);
+            numberList.Add(value);
             //Assert
-            Assert.AreEqual(value, customNumbers[0]);
+            Assert.AreEqual(value, value1);
         }
+        [TestMethod]
         public void TestMethod3()
         {
             //Arrange
-            CustomListNumbers<int> customNumbers = new CustomListNumbers<int>();
+            CustomNumbers<int> numberList = new CustomNumbers<int>();
             int value = 1;
             int value1 = 2;
             //Act
-            customNumbers.Add(value);
-            customNumbers.Add(value1);
+            numberList.Add(value);
+            numberList.Add(value1);
             //Assert
-            Assert.AreEqual(value, customNumbers[0]);
+            Assert.AreEqual(value, numberList[0]);
+        }
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+            //Arrange
+            CustomNumbers<int> numberList = new CustomNumbers<int>();
+
+            //Act
+            numberList.Add(3);
+            numberList.Add(5);
+            numberList.Add(8);
+            numberList.Add(12);
+            numberList.Add(13);
+            numberList.Add(16);
+            numberList.Add(19);
+            numberList.Add(28);
+
+            //Assert
+            Assert.AreEqual(3, numberList[0]);
         }
     }
 }
