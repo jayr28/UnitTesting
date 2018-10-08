@@ -25,13 +25,19 @@ namespace CustomList
         }
 
         public int Count{get{ return count;}}
-        private int Capacity = 4;
+        private int Capacity = 1;
 
         
 
         public void Add(T value)
         {
-            T[] temp = new T[Capacity * 2];
+            int x = Capacity;
+            if (Count >= Capacity)
+            {
+                x = Count + 1;
+            }
+
+            T[] temp = new T[x];
             for (int i = 0; i < Count; i++)
             {
                 temp[i] = numbers[i];
@@ -39,7 +45,60 @@ namespace CustomList
             temp[Count] = value;
             count++;
             numbers = temp;
+
         }
+
+        public void Remove(T value)
+        {
+           
+            int TempCount = Count - 1;
+            T[] TempArray = new T[TempCount];
+
+            int Location = 0;
+            int d = 0;
+
+            for(int i =0; i <Count; i++) //looking for existence of item to be removed
+            {
+                if(numbers[i].Equals(value))
+                {
+                    Location = i;
+                    break;
+                }
+            }
+
+            if(Location > 0)
+            {
+                for(int e = 0; e <Count; e++)
+                {
+                    if (!numbers[e].Equals(value))
+                    {
+                        TempArray[d] = numbers[e];
+                        d += 1;
+                    }
+                }
+                numbers = TempArray;
+            }
+            count = d;
+        }
+
+        public override void ToString()
+        {
+            CustomNumbers<string> temp = new CustomNumbers<string>();
+            
+            int d = 0;
+            for (int i = 0; i < Count; i++)
+            {
+                temp[i] = numbers[i].ToString();
+                d += 1;
+            }
+
+            count = d;
+           
+            numbers = temp;
+        }
+
     }
+
+
 }
 

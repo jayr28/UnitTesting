@@ -7,7 +7,10 @@ namespace UnitTestMethod
 {
     [TestClass]
     public class UnitTest1
+
     {
+ 
+
         [TestMethod]
         public void TestMethod1()
         {
@@ -61,8 +64,72 @@ namespace UnitTestMethod
             numberList.Add(19);
             numberList.Add(28);
 
+ 
+
             //Assert
             Assert.AreEqual(3, numberList[0]);
         }
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            //Arrange
+            CustomNumbers<int> numberList = new CustomNumbers<int>();
+
+            //Act
+            numberList.Add(3);
+            numberList.Add(5);
+            numberList.Add(8);
+            numberList.Add(12);
+            numberList.Add(13);
+            numberList.Add(16);
+            numberList.Add(19);
+            numberList.Add(28);
+
+            //Assert
+            Assert.AreEqual(3, numberList[5]); //this should fail
+        }
+
+        [TestMethod]
+        public void TestMethod7()
+        {
+            //Arrange
+            CustomNumbers<int> numberList = new CustomNumbers<int>();
+
+            //Act
+            numberList.Add(3);
+            numberList.Add(5);
+            numberList.Add(8);
+            numberList.Add(12);
+            numberList.Add(13);
+            numberList.Add(16);
+            numberList.Add(19);
+            numberList.Add(28);
+            numberList.Remove(8);
+
+            //Assert
+            Assert.AreEqual(8, numberList[2]); //this should fail
+        }
+        [TestMethod]
+        public void TestMethod8()
+        {
+            //Arrange
+            CustomNumbers<int> numberList = new CustomNumbers<int>();
+
+            //Act
+            numberList.Add(3);
+            numberList.Add(5);
+            numberList.Add(8);
+            numberList.Add(12);
+            numberList.Add(13);
+            numberList.Add(16);
+            numberList.Add(19);
+            numberList.Add(28);
+            numberList.Remove(16);
+
+            //Assert
+            Assert.AreEqual(19, numberList[5]); //this should pass
+        }
+
     }
 }
