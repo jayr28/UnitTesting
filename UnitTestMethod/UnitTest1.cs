@@ -130,6 +130,27 @@ namespace UnitTestMethod
             //Assert
             Assert.AreEqual(19, numberList[5]); //this should pass
         }
+        [TestMethod]
+        public void TestMethod9()
+        {
+            //Arrange
+            string expected = "3581213161928";
+            CustomNumbers<int> numberList = new CustomNumbers<int>();
+
+            //Act
+            numberList.Add(3);
+            numberList.Add(5);
+            numberList.Add(8);
+            numberList.Add(12);
+            numberList.Add(13);
+            numberList.Add(16);
+            numberList.Add(19);
+            numberList.Add(28);
+            string actual = numberList.ToString();
+
+            //Assert
+            Assert.AreEqual(expected, actual); //this should pass
+        }
 
     }
 }

@@ -1,17 +1,32 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CustomList
 {
-    public class CustomNumbers<T>
+    public class CustomNumbers<T> : IEnumerable<T>
     {
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                yield return numbers[i];
+            }
+
+        }
+
+
 
         private int count;
 
         T[] numbers = new T[8];
-        
+
         public T this[int index]
         {
             get
@@ -24,10 +39,12 @@ namespace CustomList
             }
         }
 
-        public int Count{get{ return count;}}
+        public int Count { get { return count; } }
         private int Capacity = 1;
 
-        
+
+
+
 
         public void Add(T value)
         {
@@ -50,25 +67,25 @@ namespace CustomList
 
         public void Remove(T value)
         {
-           
+
             int TempCount = Count - 1;
             T[] TempArray = new T[TempCount];
 
             int Location = 0;
             int d = 0;
 
-            for(int i =0; i <Count; i++) //looking for existence of item to be removed
+            for (int i = 0; i < Count; i++) //looking for existence of item to be removed
             {
-                if(numbers[i].Equals(value))
+                if (numbers[i].Equals(value))
                 {
                     Location = i;
                     break;
                 }
             }
 
-            if(Location > 0)
+            if (Location > 0)
             {
-                for(int e = 0; e <Count; e++)
+                for (int e = 0; e < Count; e++)
                 {
                     if (!numbers[e].Equals(value))
                     {
@@ -81,24 +98,45 @@ namespace CustomList
             count = d;
         }
 
-        public override void ToString()
+        public override string ToString()
         {
             CustomNumbers<string> temp = new CustomNumbers<string>();
-            
-            int d = 0;
+            string appendString = "";
+
             for (int i = 0; i < Count; i++)
             {
-                temp[i] = numbers[i].ToString();
-                d += 1;
+                appendString += numbers[i].ToString();
+
             }
 
-            count = d;
-           
-            numbers = temp;
+            return appendString;
+            
         }
+        public static CustomNumbers<T> operator+ (CustomNumbers<T> listA, CustomNumbers<T> listB)
+        {
+                CustomNumbers<T> output = listA;
+
+                foreach(T element in listB)
+                {
+                    output.Add(element);
+                }
+                    return output;
+                
+        }
+
+        //public static CustomNumbers<T> operator- (CustomNumbers<T> listA, CustomNumbers<T> listB)
+        //{
+            
+        //    CustomNumbers<T> output =" ";
+        //    for (int i = 0; i < Count; i++)
+        //    {
+
+        //    }
+
+
+        //}
 
     }
 
-
-}
+ }
 
